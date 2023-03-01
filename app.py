@@ -2,7 +2,7 @@
 # coding: utf-8
 
 import pickle
-park_model = pickle.load(open('C:/Users/USER/Desktop/Streamlit/park_model_new.sav', 'rb'))
+park_model = pickle.load(open('park_model_new.sav', 'rb'))
 
 
 import streamlit as st
