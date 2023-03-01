@@ -11,7 +11,7 @@ import numpy as np
 #from prediction import predict
 
 st.title("Classifying Parkinson")
-st.markdown("To model to check whether a patient has parkinson parkinson")
+st.markdown("Check your parkinson disease status")
 
 #getting input from the user
 col1, col2 = st.columns(2)
