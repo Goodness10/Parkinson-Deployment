@@ -9,15 +9,21 @@ import pandas as pd
 import numpy as np
 #from prediction import predict
 
-page_bg = f"""
-    <style>
-    body {{
-    background-image: url("bg_image");
-    background-size: cover;
-    }}
-    </style>
-    """
-st.markdown(page_bg, unsafe_allow_html=True)
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Flnpuk.com%2Fparkinsons-disease%2F&psig=AOvVaw1TnMjZ8y014h2Y6XlwgZUI&ust=1677848895120000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCPCzqKyovf0CFQAAAAAdAAAAABAE.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url() 
 
 st.title("Classifying Parkinson")
 st.markdown("Check your parkinson disease status")
