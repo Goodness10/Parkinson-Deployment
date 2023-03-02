@@ -38,13 +38,15 @@ if st.button('Parkinson Test Result'):
         
 st.success(park_diagnosis)
 
-
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.journalofparkinsonsdisease.com%2Fclinical-application-brain-mri-diagnostic-work-parkinsonism&psig=AOvVaw1UHvpe6DbXIaAxt2WhYBrx&ust=1677845464542000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPCFgsmbvf0CFQAAAAAdAAAAABAE");
-background-size: cover;
-}
-</style>
-'''
-st.markdown(page_bg_img, unsafe_allow_html=True)
+def set_background_image(image):
+    page_bg = '''
+    <style>
+    body {
+    background-image: url("'''+image+'''");
+    background-size: cover;
+    }
+    </style>
+    '''
+    st.markdown(page_bg, unsafe_allow_html=True)
+# Set the background image
+set_background_image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.journalofparkinsonsdisease.com%2Fclinical-application-brain-mri-diagnostic-work-parkinsonism&psig=AOvVaw1UHvpe6DbXIaAxt2WhYBrx&ust=1677845464542000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPCFgsmbvf0CFQAAAAAdAAAAABAE");
