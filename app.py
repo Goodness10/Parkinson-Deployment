@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 #from prediction import predict
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 st.title("Classifying Parkinson")
 st.markdown("Check your parkinson disease status")
@@ -25,18 +25,6 @@ with col1:
     HNR = st.text_input('HNR')
 with col2:
     spread2 = st.text_input('Spread2')
-#with col5:
-   # MDVP:Jitter(Abs) = st.text_input('MDVP:Jitter(Abs)')
-#with col1:
-   # MDVP:APQ  = st.text_input('MDVP:APQ')
-#with col2:
- #   MDVP:Flo(Hz) = st.text_input('MDVP:Flo(Hz)')
-#with col3:
-#    MDVP:Fhi(Hz) = st.text_input('MDVP:Fhi(Hz)')
-#with col4:
- #   Shimmer:APQ5 = st.text_input('Shimmer:APQ5')
-#with col5:
-#    MDVP:Fo(Hz) = st.text_input('MDVP:Fo(Hz)')
 
 page_bg_img = '''
 <style>
@@ -46,6 +34,7 @@ background-size: cover;
 }
 </style>
 '''
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 # code for Prediction
