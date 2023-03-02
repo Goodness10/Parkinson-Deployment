@@ -37,16 +37,12 @@ if st.button('Parkinson Test Result'):
         park_diagnosis = 'You do not have parkinson'
         
 st.success(park_diagnosis)
-
-def set_background_image(image):
-    page_bg = '''
+page_bg = '''
     <style>
     body {
-    background-image: url("'''+image+'''");
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fradiopaedia.org%2Farticles%2Fparkinson-disease-1&psig=AOvVaw0gB9XyPcqwMug8sxgiH3qb&ust=1677848436068000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJiZktKmvf0CFQAAAAAdAAAAABAE.jpg")
     background-size: cover;
     }
     </style>
     '''
-    st.markdown(page_bg, unsafe_allow_html=True)
-# Set the background image
-set_background_image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fradiopaedia.org%2Farticles%2Fparkinson-disease-1&psig=AOvVaw0gB9XyPcqwMug8sxgiH3qb&ust=1677848436068000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJiZktKmvf0CFQAAAAAdAAAAABAE.jpg")
+st.markdown(page_bg, unsafe_allow_html=True)
