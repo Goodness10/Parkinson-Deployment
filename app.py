@@ -40,7 +40,7 @@ st.success(park_diagnosis)
 page_bg = '''
     <style>
     body {
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fradiopaedia.org%2Farticles%2Fparkinson-disease-1&psig=AOvVaw0gB9XyPcqwMug8sxgiH3qb&ust=1677848436068000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJiZktKmvf0CFQAAAAAdAAAAABAE.jpg")
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpubs.rsna.org%2Fdoi%2Ffull%2F10.1148%2Fradiol.2021203341&psig=AOvVaw0EDJJs4Gs8rPHz9AgCM6aB&ust=1677848793654000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICsrvynvf0CFQAAAAAdAAAAABAE.jpg")
     background-size: cover;
     }
     </style>
