@@ -9,21 +9,22 @@ import pandas as pd
 import numpy as np
 #from prediction import predict
 
-def add_bg_from_url():
+import base64
+def add_bg_from_local(image_file):
+    with open(image_file, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
     st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background-image: url("bg_image.jpg");
-             background-attachment: fixed;
-             background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )
-
-add_bg_from_url() 
+    f"""
+    <style>
+    .stApp {{
+        background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
+        background-size: cover
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
+add_bg_from_local('bg_image.png') 
 
 st.title("Classifying Parkinson")
 st.markdown("Check your parkinson disease status")
