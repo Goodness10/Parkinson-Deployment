@@ -9,6 +9,16 @@ import pandas as pd
 import numpy as np
 #from prediction import predict
 
+page_bg = f"""
+    <style>
+    body {{
+    background-image: url("bg_image");
+    background-size: cover;
+    }}
+    </style>
+    """
+st.markdown(page_bg, unsafe_allow_html=True)
+
 st.title("Classifying Parkinson")
 st.markdown("Check your parkinson disease status")
 
@@ -38,15 +48,7 @@ if st.button('Parkinson Test Result'):
         
 st.success(park_diagnosis)
 
-page_bg = f"""
-    <style>
-    body {{
-    background-image: url("bg_image");
-    background-size: cover;
-    }}
-    </style>
-    """
-st.markdown(page_bg, unsafe_allow_html=True)
+
 
 #page_bg = '''
 #    <style>
