@@ -9,15 +9,6 @@ import pandas as pd
 import numpy as np
 #from prediction import predict
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.journalofparkinsonsdisease.com%2Fclinical-application-brain-mri-diagnostic-work-parkinsonism&psig=AOvVaw1UHvpe6DbXIaAxt2WhYBrx&ust=1677845464542000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPCFgsmbvf0CFQAAAAAdAAAAABAE");
-background-size: cover;
-}
-</style>
-'''
-
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.title("Classifying Parkinson")
@@ -47,6 +38,14 @@ with col2:
 #with col5:
 #    MDVP:Fo(Hz) = st.text_input('MDVP:Fo(Hz)')
 
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.journalofparkinsonsdisease.com%2Fclinical-application-brain-mri-diagnostic-work-parkinsonism&psig=AOvVaw1UHvpe6DbXIaAxt2WhYBrx&ust=1677845464542000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPCFgsmbvf0CFQAAAAAdAAAAABAE");
+background-size: cover;
+}
+</style>
+'''
 
 
 # code for Prediction
