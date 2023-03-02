@@ -9,8 +9,6 @@ import pandas as pd
 import numpy as np
 #from prediction import predict
 
-
-
 st.title("Classifying Parkinson")
 st.markdown("Check your parkinson disease status")
 
@@ -26,17 +24,6 @@ with col1:
 with col2:
     spread2 = st.text_input('Spread2')
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.journalofparkinsonsdisease.com%2Fclinical-application-brain-mri-diagnostic-work-parkinsonism&psig=AOvVaw1UHvpe6DbXIaAxt2WhYBrx&ust=1677845464542000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPCFgsmbvf0CFQAAAAAdAAAAABAE");
-background-size: cover;
-}
-</style>
-'''
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
-
 # code for Prediction
 park_diagnosis = ''
     
@@ -50,3 +37,14 @@ if st.button('Parkinson Test Result'):
         park_diagnosis = 'You do not have parkinson'
         
 st.success(park_diagnosis)
+
+
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.journalofparkinsonsdisease.com%2Fclinical-application-brain-mri-diagnostic-work-parkinsonism&psig=AOvVaw1UHvpe6DbXIaAxt2WhYBrx&ust=1677845464542000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPCFgsmbvf0CFQAAAAAdAAAAABAE");
+background-size: cover;
+}
+</style>
+'''
+st.markdown(page_bg_img, unsafe_allow_html=True)
