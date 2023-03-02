@@ -14,7 +14,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Flnpuk.com%2Fparkinsons-disease%2F&psig=AOvVaw1TnMjZ8y014h2Y6XlwgZUI&ust=1677848895120000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCPCzqKyovf0CFQAAAAAdAAAAABAE.jpg");
+             background-image: url("bg_image.jpg");
              background-attachment: fixed;
              background-size: cover
          }}
