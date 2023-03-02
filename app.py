@@ -37,12 +37,23 @@ if st.button('Parkinson Test Result'):
         park_diagnosis = 'You do not have parkinson'
         
 st.success(park_diagnosis)
-page_bg = '''
+
+ page_bg = f"""
     <style>
-    body {
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpubs.rsna.org%2Fdoi%2Ffull%2F10.1148%2Fradiol.2021203341&psig=AOvVaw0EDJJs4Gs8rPHz9AgCM6aB&ust=1677848793654000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICsrvynvf0CFQAAAAAdAAAAABAE.jpg")
+    body {{
+    background-image: url("bg_image");
     background-size: cover;
-    }
+    }}
     </style>
-    '''
-st.markdown(page_bg, unsafe_allow_html=True)
+    """
+    st.markdown(page_bg, unsafe_allow_html=True)
+
+#page_bg = '''
+#    <style>
+#    body {
+#    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpubs.rsna.org%2Fdoi%2Ffull%2F10.1148%2Fradiol.2021203341&psig=AOvVaw0EDJJs4Gs8rPHz9AgCM6aB&ust=1677848793654000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICsrvynvf0CFQAAAAAdAAAAABAE.jpg")
+#    background-size: cover;
+ #   }
+  #  </style>
+   # '''
+# st.markdown(page_bg, unsafe_allow_html=True)
