@@ -49,4 +49,4 @@ def set_background_image(image):
     '''
     st.markdown(page_bg, unsafe_allow_html=True)
 # Set the background image
-set_background_image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fradiologykey.com%2Fstructural-mri-in-idiopathic-parkinson-disease-and-parkinsonism%2F&psig=AOvVaw2i0TCJ2s9VHHUq9rLkKrfH&ust=1677847039633000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKig_rehvf0CFQAAAAAdAAAAABAJ.jpg")
+set_background_image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fradiopaedia.org%2Farticles%2Fparkinson-disease-1&psig=AOvVaw0gB9XyPcqwMug8sxgiH3qb&ust=1677848436068000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJiZktKmvf0CFQAAAAAdAAAAABAE.jpg")
