@@ -1,6 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import pickle
+park_model = pickle.load(open('park_model_new.sav', 'rb'))
+
+import streamlit as st
+import pandas as pd
+import numpy as np
+#from prediction import predict
+
 page_bg_img = '''
 <style>
 body {
@@ -11,15 +19,6 @@ background-size: cover;
 '''
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
-
-import pickle
-park_model = pickle.load(open('park_model_new.sav', 'rb'))
-
-
-import streamlit as st
-import pandas as pd
-import numpy as np
-#from prediction import predict
 
 st.title("Classifying Parkinson")
 st.markdown("Check your parkinson disease status")
