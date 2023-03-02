@@ -38,7 +38,7 @@ if st.button('Parkinson Test Result'):
         
 st.success(park_diagnosis)
 
- page_bg = f"""
+page_bg = f"""
     <style>
     body {{
     background-image: url("bg_image");
