@@ -31,17 +31,6 @@ def set_bg_hack_url():
      )
 set_bg_hack_url()
 
-# Define the CSS styling
-style = """
-<style>
-div.stInput > div.stTextArea > div[role="textbox"] {
-    background-color: #e6f7ff;
-}
-</style>
-"""
-
-# Render the styling
-st.markdown(style, unsafe_allow_html=True)
 
 # Create an input box
 text_input = st.text_input("Enter some text:")
@@ -62,6 +51,17 @@ with col1:
 with col2:
     spread2 = st.text_input('Spread2')
 
+# Define the CSS styling
+style = """
+<style>
+div.stInput > div.stTextArea > div[role="textbox"] {
+    background-color: #e6f7ff;
+}
+</style>
+"""
+
+# Render the styling
+st.markdown(style, unsafe_allow_html=True)
 # code for Prediction
 park_diagnosis = ''
     
