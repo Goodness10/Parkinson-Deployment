@@ -35,7 +35,7 @@ set_bg_hack_url()
 style = """
 <style>
 div.stInput > div.stTextArea > div[role="textbox"] {
-    background-color: #FF0000;
+    background-color: #e6f7ff;
 }
 </style>
 """
