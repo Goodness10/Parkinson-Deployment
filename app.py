@@ -22,7 +22,7 @@ def set_bg_hack_url():
          f"""
          <style>
          .stApp {{
-             background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.futuremedicine.com%2Fdoi%2F10.2217%2Febo.11.211&psig=AOvVaw19pFX-6zBfqcg5T6zGj4uM&ust=1677923341243000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMirwNe9v_0CFQAAAAAdAAAAABAE.jpg");
+             background: url("https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_960_720.jpg");
              background-size: cover
          }}
          </style>
