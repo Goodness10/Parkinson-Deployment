@@ -9,6 +9,7 @@ import pandas as pd
 import numpy as np
 #from prediction import predict
 
+'''
 def set_bg_hack_url():
     '''
     A function to unpack an image from url and set as bg.
@@ -29,7 +30,8 @@ def set_bg_hack_url():
          unsafe_allow_html=True
      )
 set_bg_hack_url()
-
+'''
+    
 st.title("Classifying Parkinson")
 st.markdown("Check your parkinson disease status")
 
