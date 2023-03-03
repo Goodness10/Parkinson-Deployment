@@ -40,12 +40,12 @@ col1, col2 = st.columns(2)
 
 with col1:
     PPE = st.text_input('PPE')
-    components.html(
-    <script>
-    const elements = window.parent.document.querySelectorAll('.stNumberInput div[data-baseweb="input"] > div')
-    console.log(elements)
-    elements[1].style.backgroundColor = 'red'
-    </script>
+components.html(
+<script>
+const elements = window.parent.document.querySelectorAll('.stNumberInput div[data-baseweb="input"] > div')
+console.log(elements)
+elements[1].style.backgroundColor = 'red'
+</script>
 ,
        height=0,
        width=0,
